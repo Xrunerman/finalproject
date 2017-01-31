@@ -383,6 +383,10 @@ a:after {
     background-image: url('../img/bg/divider4.jpg')
 }
 
+.divider5 {
+    background-image: url('../img/bg/divider5.jpg')
+}
+
 .service-trigger {
     display: block;
     position: relative;
