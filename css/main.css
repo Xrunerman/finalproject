@@ -567,3 +567,54 @@ screen and (max-device-width:1050px) {
         line-height: 38px;
     }
 }
+
+input[type="text"],
+input[type="email"] {
+    color: #000;
+    margin-left: 10px;
+    height: 30px;
+    width: 100%;
+    border-style: groove groove groove groove;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #000;
+    margin: 0 auto;
+}
+
+textarea {
+    width: 100%;
+    margin: 1%;
+}
+
+button[type="submit"] {
+    width: 125px;
+    margin: 0 auto;
+    float: right;
+}
+
+input,
+textarea {
+    color: #000;
+    border-style: groove groove groove groove;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-color: #000;
+    margin: 0 auto;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+button[type="submit"] {
+    background: #5e606c;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 10px;
+}
