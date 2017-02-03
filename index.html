@@ -3,15 +3,15 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="shortcut icon" href="/finalproject/ico/favicon.png" type="image/png">
+	<link rel="shortcut icon" href="/ico/favicon.png" type="image/png">
 	<title>Bohdan Chornyi - Personal page</title>
-	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-	<link href="/finalproject/css/bootstrap.css" rel="stylesheet">
-	<link href="/finalproject/css/main.css" rel="stylesheet">
-	<link rel="stylesheet" href="/finalproject/css/icomoon.css">
-	<link href="/finalproject/css/animate-custom.css" rel="stylesheet">
-	<link rel="stylesheet" media="all" href="/finalproject/css/animate.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/icomoon.css">
+	<link href="/css/animate-custom.css" rel="stylesheet">
+	<link rel="stylesheet" media="all" href="css/animate.css">
 </head>
 
 <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
@@ -82,7 +82,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 centered">
-					<img class="img-responsive" src="/finalproject/img/htmlcss.png" align="html/css/js">
+					<img class="img-responsive" src="/img/htmlcss.png" alt="html/css/js">
 				</div>
 				<div class="col-lg-4">
 					<h2>We are ready to work!</h2>
@@ -119,7 +119,7 @@
 				<div class="col-md-4 ">
 					<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site">
+							<img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site">
 							<figcaption>
 								<h5>Coming Soon</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -136,7 +136,7 @@
 								<h4 class="modal-title">Cap for all works</h4>
 							</div>
 							<div class="modal-body">
-								<p><img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site"></p>
+								<p><img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site"></p>
 								<p>Here I will describe about the website as it was created, have been what is the time spent for creation of this website. Also dopolnitelny information what functions have been involved.</p>
 								<p><b><a href="#">Visit Site</a></b></p>
 							</div>
@@ -150,7 +150,7 @@
 				<div class="col-md-4">
 					<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site">
+							<img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site">
 							<figcaption>
 								<h5>Coming Soon</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -162,7 +162,7 @@
 				<div class="col-md-4">
 					<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site">
+							<img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site">
 							<figcaption>
 								<h5>Coming Soon</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -176,7 +176,7 @@
 				<div class="col-md-4 ">
 					<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site">
+							<img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site">
 							<figcaption>
 								<h5>Coming Soon</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -188,7 +188,7 @@
 				<div class="col-md-4">
 					<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site">
+							<img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site">
 							<figcaption>
 								<h5>Coming Soon</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -200,7 +200,7 @@
 				<div class="col-md-4">
 					<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="/finalproject/img/portfolio/folio01.jpg" alt="example site">
+							<img class="img-responsive" src="/img/portfolio/folio01.jpg" alt="example site">
 							<figcaption>
 								<h5>Coming Soon</h5>
 								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
@@ -235,13 +235,24 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<h1>Coming soon</h1>
+				<form>
+					<input type="text" name="name" placeholder="Your beautiful name" pattern="[A-Za-z0-9]" required="">
+					<br><br>
+					<input type="email" name="email" placeholder="Your email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="">
+					<br><br>
+					<textarea name="message" placeholder="Leave your message" rows="9"></textarea>
+					<button type="submit" id="submit">Send Message</button>
+				</form>
+				<div id="message" class="status hidden">
+					<h1 class="success hidden" align="center">Thanks. Shortly we will communicate!</h1>
+					<h1 class="fail hidden" align="center">Likely you have entered not correct email, try once again!</h1>
+				</div>
 			</div>
 			<br>
 			<br>
 		</div>
 	</div>
-	
+
 	<section class="section-divider1 textdivider divider4">
 		<div class="container">
 			<h1>CRAFTED IN LVIV, UKRAINE</h1>
@@ -252,16 +263,17 @@
 			<p>Skype - Call ME!</p>
 		</div>
 	</section>
-	<script src="/finalproject/js/menu.js"></script>
-	<script src="/finalproject/js/wow.min.js"></script>
-	<script src="/finalproject/js/wow.init.js"></script>
-	<script src="/finalproject/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/finalproject/js/modernizr.custom.js"></script>
-	<script type="text/javascript" src="/finalproject/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/finalproject/js/retina.js"></script>
-	<script type="text/javascript" src="/finalproject/js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="/finalproject/js/smoothscroll.js"></script>
-	<script type="text/javascript" src="/finalproject/js/jquery-func.js"></script>
+	<script type="text/javascript" src="js/form.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow.init.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/js/retina.js"></script>
+	<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="/js/jquery-func.js"></script>
 </body>
 
 </html>
