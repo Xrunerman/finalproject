@@ -604,10 +604,6 @@ textarea {
     border-bottom-width: 1px;
     border-color: #000;
     margin: 0 auto;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
     padding-left: 10px;
 }
 
