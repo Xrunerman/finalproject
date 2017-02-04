@@ -58,6 +58,14 @@ body {
     padding-bottom: 20px;
 }
 
+.col-lg-6 {
+    width: 78%;
+}
+
+.col-lg-7 {
+    width: 21%;
+}
+
 .row {
     margin-right: 0px;
     margin-left: -15px;
