@@ -235,7 +235,6 @@ a:after {
     margin-top: -50px;
     padding-top: 120px;
     text-align: center;
-    background-attachment: relative;
     background-position: center center;
     min-height: 650px;
     width: 100%;
@@ -339,7 +338,6 @@ a:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: relative;
     text-align: center;
 }
 
@@ -365,7 +363,6 @@ a:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-attachment: relative;
     text-align: center;
 }
 
